@@ -1,0 +1,40 @@
+.sectionMainContainer{
+
+  flex-shrink: 0;
+}
+
+.sectionHeading {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+  display: flex;
+  align-items: center;
+  height: 25px;
+  gap:20px;
+  text-transform: capitalize;
+  margin: 50px 0 50px;
+}
+.line {
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  flex-shrink: 0;
+  background: #d100c9;
+}
+
+.sectionSubHeading{
+  color: var(--shades-700, #242424);
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 67.2px */
+margin: 46px 0 0 5px;
+
+max-width: 1281px;
+white-space: normal;
+
+
+
+}

@@ -1,0 +1,29 @@
+/* Hide vertical scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar in Firefox */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.main-section{
+  padding: 84px 15px 84px 80px;
+  width: 100%;
+}
+.slick-slide {
+  margin: 0 20px;
+}
