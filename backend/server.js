@@ -1,20 +1,16 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const config = require('./config');
+const connectDb = require("./config/db");
+const { brands } = require("./routes/index");
 
 const app = express();
-
-const PORT = process.env.PORT || 3001;
-const dbUrl = config.database.url;
-
-mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
-
-const brandRoutes = require('./routes/brandRoutes');
+connectDb();
 
 app.use(express.json());
 
-app.use('/api/brands', brandRoutes);
+const PORT = process.env.PORT || 5000;
+
+app.use('/brands', brands);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
