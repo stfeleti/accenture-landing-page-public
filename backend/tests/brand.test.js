@@ -1,6 +1,19 @@
 const request = require('supertest');
-const app = require('../app');
+const mongoose = require('mongoose');
+const config = require('../config');
 
+const dbUrl = config.database.url;
+
+beforeAll(async () => {
+  await mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
+});
+
+afterAll(async () => {
+  await mongoose.disconnect();
+});
+
+const app = require('../server');
+const Brand = require('../models/brandModel');
 describe('Brand API', () => {
   it('should get all brands', async () => {
     const response = await request(app).get('/api/brands');
