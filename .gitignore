@@ -8,8 +8,6 @@
 /build
 /dist
 
-# Environment variables (if applicable)
-.env
 
 # IDE/Editor specific files (if applicable)
 .idea
