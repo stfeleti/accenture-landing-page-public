@@ -39,9 +39,10 @@ const CaseStudiesSlider = () => {
         autoplay: true,
         pauseOnHover: true,
         adaptiveHeight: true,
-        speed: 800, // Decreased animation speed for a smoother transition
-        autoplaySpeed: 3500, // Increased interval between slides for a more relaxed pace
-        cssEase: "cubic-bezier(0.645, 0.045, 0.355, 1)", // Provides a smooth, ease-in-out transition
+        speed: 1000, 
+        autoplaySpeed: 3500, 
+        cssEase: "cubic-bezier(0.645, 0.045, 0.355, 1)", 
+        pauseOnHover: true
     };
   
     return (
