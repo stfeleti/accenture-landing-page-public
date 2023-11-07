@@ -24,7 +24,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 200;
+  z-index: 20;
 }
 .logo {
   aspect-ratio: 3.33;

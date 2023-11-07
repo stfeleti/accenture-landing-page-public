@@ -1,8 +1,13 @@
+// Import the React library
 import React from "react";
+
+// Import CSS modules
 import styles from "./FooterSection.module.css";
 import commonStyles from "../../styles/common.module.css";
 
+// Define a functional component named FooterSection
 function FooterSection() {
+  // Render JSX content
   return (
     <div
       className={`${commonStyles.sectionMainContainer} ${styles.footerContainer}`}
@@ -62,4 +67,6 @@ function FooterSection() {
     </div>
   );
 }
+
+// Export the FooterSection component as the default export of this file
 export default FooterSection;

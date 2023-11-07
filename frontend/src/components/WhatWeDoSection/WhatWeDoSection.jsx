@@ -1,12 +1,19 @@
+// Import the React library
 import React from "react";
+
+// Import CSS modules
 import commonStyles from "../../styles/common.module.css";
 import styles from "./WhatWeDoSection.module.css";
+
+// Import icons and images
 import webDevIcon from "../../images/assets/web-development-icon.svg";
 import uxDesignIcon from "../../images/assets/ui-design-icon.svg";
 import mobileDevelopmentIcon from "../../images/assets/mobile-development-icon.svg";
 import blockchainIcon from "../../images/assets/blockchain-icon.svg";
 
+// Define a functional component named WhatWeDoSection
 function WhatWeDoSection() {
+  // Render JSX content
   return (
     <div id="services" className={`${commonStyles.sectionMainContainer}`}>
       <div className={`${commonStyles.sectionHeading}`}>
@@ -18,13 +25,13 @@ function WhatWeDoSection() {
         help you turn your ideas into digital masterpieces
       </p>
       <div className={`${styles.cardWrapper}`}>
+        {/* Render a card for Web development */}
         <div className={`${styles.doCard}`}>
           <img
             src={webDevIcon}
             alt="web development"
             className={`${styles.doCardImage}`}
           />
-
           <div className={`${styles.doCardHeading}`}>
             <span>Web development</span>
           </div>
@@ -33,13 +40,13 @@ function WhatWeDoSection() {
             fulfill their business goals through functional, reliable solutions.
           </div>
         </div>
+        {/* Render a card for User experience & design */}
         <div className={`${styles.doCard}`}>
           <img
             src={uxDesignIcon}
             alt="ui design"
             className={`${styles.doCardImage}`}
           />
-
           <div className={`${styles.doCardHeading}`}>
             <span>User experience & design</span>
           </div>
@@ -49,13 +56,13 @@ function WhatWeDoSection() {
             business.
           </div>
         </div>
+        {/* Render a card for Mobile app development */}
         <div className={`${styles.doCard}`}>
           <img
             src={mobileDevelopmentIcon}
             alt="mobile development"
             className={`${styles.doCardImage}`}
           />
-
           <div className={`${styles.doCardHeading}`}>
             <span>Mobile app development</span>
           </div>
@@ -65,13 +72,13 @@ function WhatWeDoSection() {
             for our clients.
           </div>
         </div>
+        {/* Render a card for Blockchain solutions */}
         <div className={`${styles.doCard}`}>
           <img
             src={blockchainIcon}
             alt="blockchain"
             className={`${styles.doCardImage}`}
           />
-
           <div className={`${styles.doCardHeading}`}>
             <span>Blockchain solutions</span>
           </div>
@@ -86,4 +93,5 @@ function WhatWeDoSection() {
   );
 }
 
+// Export the WhatWeDoSection component as the default export of this file
 export default WhatWeDoSection;

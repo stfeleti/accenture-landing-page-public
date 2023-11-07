@@ -1,5 +1,17 @@
+// Import the Brand model from '../models/brandModel'
 const Brand = require('../models/brandModel');
+
+// Import the mongoose library for MongoDB interactions
 const mongoose = require('mongoose');
+
+/**
+ * Get all brands from the database with optional search, pagination, and sorting options.
+ * @param {string} search - Optional search string to filter brands by name or category.
+ * @param {number} reqPage - Requested page number for pagination.
+ * @param {number} reqLimit - Requested limit of items per page for pagination.
+ * @param {string} sortBy - Optional field and order for sorting (e.g., 'name:desc').
+ * @returns {Promise<object>} - A promise that resolves with an object containing brands, pagination info, and total count.
+ */
 async function getAllBrands(search, reqPage, reqLimit, sortBy) {
     try {
         let options = {};
@@ -47,6 +59,11 @@ async function getAllBrands(search, reqPage, reqLimit, sortBy) {
     }
 }
 
+/**
+ * Get a brand by its ID.
+ * @param {string} id - The ID of the brand.
+ * @returns {Promise<object>} - A promise that resolves with an object containing the brand data, or an error message if not found.
+ */
 async function getBrandById(id) {
     try {
         const brand = await Brand.findById(id);
@@ -64,6 +81,11 @@ async function getBrandById(id) {
     }
 }
 
+/**
+ * Add a new brand to the database.
+ * @param {object} body - The brand data to be added.
+ * @returns {Promise<object>} - A promise that resolves with the added brand data, or an error message if unsuccessful.
+ */
 async function addBrand(body) {
     try {
         body._id = new mongoose.Types.ObjectId();
@@ -79,6 +101,14 @@ async function addBrand(body) {
     }
 }
 
+/**
+ * Update an existing brand in the database.
+ * @param {string} id - The ID of the brand to be updated.
+ * @param {string} name - The new name for the brand (optional).
+ * @param {string} category - The new category for the brand (optional).
+ * @param {boolean} published - The new published status for the brand (optional).
+ * @returns {Promise<object>} - A promise that resolves with the updated brand data, or an error message if unsuccessful.
+ */
 async function updateBrand(id, name, category, published) {
     try {
         const brand = await Brand.findById(id);
@@ -111,6 +141,11 @@ async function updateBrand(id, name, category, published) {
     }
 }
 
+/**
+ * Remove a brand from the database by its ID.
+ * @param {string} id - The ID of the brand to be removed.
+ * @returns {Promise<object>} - A promise that resolves with a success message if removal is successful, or an error message if unsuccessful.
+ */
 async function removeBrand(id) {
     try {
         const brand = await Brand.findById(id);
@@ -130,6 +165,7 @@ async function removeBrand(id) {
     }
 }
 
+// Export the functions as an object to make them available for use in other files
 module.exports = {
     getAllBrands,
     getBrandById,
