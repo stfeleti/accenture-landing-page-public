@@ -8,6 +8,15 @@ const {
     removeBrand
 } = require('../controllers/brandController');
 
+/**
+ * @swagger
+ * /brands:
+ *   get:
+ *     description: Get all brands
+ *     responses:
+ *       200:
+ *         description: Returns a list of all brands
+ */
 router.get('/', async (req, res) => {
     const response = await getAllBrands(
         req.query.search,
@@ -23,6 +32,21 @@ router.get('/', async (req, res) => {
     }
 });
 
+/**
+ * @swagger
+ * /brands/{id}:
+ *   get:
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         type: string
+ *         description: The brand ID.
+ *     description: Get a brand by ID
+ *     responses:
+ *       200:
+ *         description: Returns the requested brand
+ */
 router.get('/:id', async (req, res) => {
     const response = await getBrandById(req.params.id);
 
@@ -33,6 +57,27 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+/**
+ * @swagger
+ * /brands:
+ *   post:
+ *     parameters:
+ *       - in: body
+ *         name: brand
+ *         description: New brand
+ *         schema:
+ *           type: object
+ *           properties:
+ *             name:
+ *               type: string
+ *             category:
+ *               type: string
+ *             published:
+ *               type: boolean
+ *     responses:
+ *       201:
+ *         description: Created
+ */
 router.post('/', async (req, res) => {
     const body = {
         name: req.body.name,
@@ -49,6 +94,32 @@ router.post('/', async (req, res) => {
     }
 });
 
+/**
+ * @swagger
+ * /brands/{id}:
+ *   put:
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         type: string
+ *         description: The brand ID.
+ *       - in: body
+ *         name: brand
+ *         description: Update brand
+ *         schema:
+ *           type: object
+ *           properties:
+ *             name:
+ *               type: string
+ *             category:
+ *               type: string
+ *             published:
+ *               type: boolean
+ *     responses:
+ *       200:
+ *         description: Updated
+ */
 router.put('/:id', async (req, res) => {
     const { name, category, published } = req.body;
     const response = await updateBrand(req.params.id, name, category, published);
@@ -60,6 +131,21 @@ router.put('/:id', async (req, res) => {
     }
 });
 
+/**
+ * @swagger
+ * /brands/{id}:
+ *   delete:
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         type: string
+ *         description: The brand ID.
+ *     description: Delete a brand by ID
+ *     responses:
+ *       200:
+ *         description: Returns the deleted brand
+ */
 router.delete('/:id', async (req, res) => {
     const response = await removeBrand(req.params.id);
 
