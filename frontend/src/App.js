@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import WhatWeDoSection from "./components/WhatWeDoSection/WhatWeDoSection";
 import CaseStudySection from "./components/CaseStudySection/CaseStudySection";
 import BrandSection from "./components/BrandSection/BrandSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
         <WhatWeDoSection />
         <CaseStudySection />
         <BrandSection />
+        
       </main>
+      <footer id="contact">
+      <Footer/>
+      </footer>
     </div>
   );
 }

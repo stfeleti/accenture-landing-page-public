@@ -64,7 +64,7 @@ function Navbar() {
               <a href='#cases' className={`${styles.navLink}`}>Cases</a>
             </li>
             <li onClick={removeActive}>
-              <a href='#Contact' className={`${styles.navLink}`}>Contact</a>
+              <a href='#contact' className={`${styles.navLink}`}>Contact</a>
             </li>
             <li className={`${styles.buttonItem}`}>
               <button className={`${styles.contactButton}`}>Let’s Talk</button>

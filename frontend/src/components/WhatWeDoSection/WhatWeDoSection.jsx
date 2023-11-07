@@ -8,7 +8,7 @@ import blockchainIcon from "../../images/assets/blockchain-icon.svg";
 
 function WhatWeDoSection() {
   return (
-    <div className={`${commonStyles.sectionMainContainer}`}>
+    <div id="services" className={`${commonStyles.sectionMainContainer}`}>
       <div className={`${commonStyles.sectionHeading}`}>
         <span className={`${commonStyles.line}`}></span>
         <span>What We Do</span>

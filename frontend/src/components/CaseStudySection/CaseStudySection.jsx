@@ -6,7 +6,7 @@ import CaseStudiesSlider from "./CaseStudiesSlider";
 
 function CaseStudySection() {
   return (
-    <div className={`${commonStyles.sectionMainContainer}`}>
+    <div id="cases" className={`${commonStyles.sectionMainContainer}`}>
       <div
         className={`${commonStyles.sectionHeading} ${styles.caseStudyHeader}`}
       >

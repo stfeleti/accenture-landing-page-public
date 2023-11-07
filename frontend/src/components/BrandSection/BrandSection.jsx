@@ -6,17 +6,23 @@ function BrandSection() {
   const [brands, setBrands] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/brands')// Assuming data is an array of brands
-      .then(response => response.json())
+    fetch('http://localhost:5000/brands')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
       .then(data => {
         setBrands(data.data); 
       })
-      .catch(error => 
-        console.error('Error:', error));
+      .catch(error => {
+        console.error('Error:', error)
+      });
   }, []);
-
+  
   return (
-    <div className={commonStyles.sectionMainContainer}>
+    <div id="industries" className={commonStyles.sectionMainContainer}>
       <div className={commonStyles.sectionHeading}>
         <span className={commonStyles.line}></span>
         <span>You’ll be in good company</span>
