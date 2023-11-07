@@ -4,7 +4,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import WhatWeDoSection from "./components/WhatWeDoSection/WhatWeDoSection";
 import CaseStudySection from "./components/CaseStudySection/CaseStudySection";
 import BrandSection from "./components/BrandSection/BrandSection";
-import Footer from "./components/Footer/Footer";
+import FooterSection from "./components/Footer/FooterSection";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         
       </main>
       <footer id="contact">
-      <Footer/>
+      <FooterSection/>
       </footer>
     </div>
   );

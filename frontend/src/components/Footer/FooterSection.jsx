@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Footer.module.css";
+import styles from "./FooterSection.module.css";
 import commonStyles from "../../styles/common.module.css";
 
-function Footer() {
+function FooterSection() {
   return (
     <div
       className={`${commonStyles.sectionMainContainer} ${styles.footerContainer}`}
@@ -32,30 +32,29 @@ function Footer() {
       </div>
       <div className={styles.footerBottom}>
         <span>
-          Terms of service
+          <a href="/terms-of-service">Terms of service</a>
           <br />
-          Privacy policy
+          <a href="/privacy-policy">Privacy policy</a>
           <br />
-          Impressum
+          <a href="/impressum">Impressum</a>
         </span>
         <span>
-          Facebook
+          <a href="https://facebook.com">Facebook</a>
           <br />
-          Instagram
+          <a href="https://instagram.com">Instagram</a>
           <br />
-          Twitter
+          <a href="https://twitter.com">Twitter</a>
         </span>
         <span>
-          Youtube
+          <a href="https://youtube.com">Youtube</a>
           <br />
-          Behance
-          <br /> 
-          Dribbble
+          <a href="https://behance.net">Behance</a>
+          <br />
+          <a href="https://dribbble.com">Dribbble</a>
           <br />
         </span>
-        <span>
-          Explore open jobs
-          <br />
+        <span className={styles.addressSection}>
+          <a href="/open-jobs">Explore open jobs</a>
           <br />
           ©2000—2023 Company Name
         </span>
@@ -63,4 +62,4 @@ function Footer() {
     </div>
   );
 }
-export default Footer;
+export default FooterSection;

@@ -20,7 +20,7 @@
 .doCard {
   -webkit-order: 0;
   order: 0;
-  flex: 0 0 290px;
+  flex: 1 0 290px;
   -webkit-align-self: auto;
   align-self: auto;
   height: 399px;

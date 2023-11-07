@@ -1,6 +1,6 @@
 .footerContainer {
   width: 100%;
-  height: 501px;
+  min-height: 501px;
   flex-shrink: 0;
   background: var(--primary-dark, #430964);
   color: white;
@@ -19,6 +19,8 @@
 .footerBottom {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  gap: 40px
 }
 .footerBottom{
     margin-top: 90px;
@@ -36,4 +38,11 @@
   width: 455px;
   display: inline;
   margin: 0;
+}
+
+
+.addressSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
