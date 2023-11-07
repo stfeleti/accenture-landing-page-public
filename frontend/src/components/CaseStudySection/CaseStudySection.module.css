@@ -23,7 +23,7 @@
     object-position: center;
     left: 0;
     right: 0;
-    filter: brightness(1%);
+    filter: brightness(50%);
 }
 
 .caseCardTextWrapper{

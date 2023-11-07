@@ -3,11 +3,15 @@ const connectDb = require("./config/db");
 const { brands } = require("./routes/index");
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
+const cors = require('cors'); 
 
 const app = express();
 connectDb();
 
+
 app.use(express.json());
+
+app.use(cors()); // Use the cors middleware
 
 const swaggerOptions = {
     swaggerDefinition: {
