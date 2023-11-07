@@ -1,0 +1,99 @@
+[
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/distell-black.svg",
+      "name": "Distell",
+      "category": "Beverage",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/tfg-black.svg",
+      "name": "TFG",
+      "category": "Retail",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/multichoice-black.svg",
+      "name": "Multichoice",
+      "category": "Media & Entertainment",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/wesgrow-black.svg",
+      "name": "Wesgrow",
+      "category": "Agriculture",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/engen-black.svg",
+      "name": "Engen",
+      "category": "Energy",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/tyme-bank-black.svg",
+      "name": "Tyme Bank",
+      "category": "Finance",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/liquid-black.svg",
+      "name": "Liquid",
+      "category": "Technology",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/santam-black.svg",
+      "name": "Santam",
+      "category": "Insurance",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/microsoft-black.svg",
+      "name": "Microsoft",
+      "category": "Technology",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/visa-black.svg",
+      "name": "Visa",
+      "category": "Finance",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/pnp-black.svg",
+      "name": "Pick n Pay",
+      "category": "Retail",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/nike-black.svg",
+      "name": "Nike",
+      "category": "Apparel",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/logo.svg",
+      "name": "Logo",
+      "category": "Branding",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/sanlam-black.svg",
+      "name": "Sanlam",
+      "category": "Insurance",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/spotify-black.svg",
+      "name": "Spotify",
+      "category": "Media & Entertainment",
+      "published": true
+    },
+    {
+      "imageURL": "https://dapdy-images.sirv.com/accenture-images/bbc-black.svg",
+      "name": "BBC",
+      "category": "Media & Entertainment",
+      "published": true
+    }
+  ]
+  

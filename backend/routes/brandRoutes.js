@@ -68,6 +68,8 @@ router.get('/:id', async (req, res) => {
  *         schema:
  *           type: object
  *           properties:
+ *             imageURL:
+ *               type: string
  *             name:
  *               type: string
  *             category:
@@ -80,6 +82,8 @@ router.get('/:id', async (req, res) => {
  */
 router.post('/', async (req, res) => {
     const body = {
+        
+        imageURL: req.body.imageURL,
         name: req.body.name,
         category: req.body.category,
         published: req.body.published
@@ -110,6 +114,8 @@ router.post('/', async (req, res) => {
  *         schema:
  *           type: object
  *           properties:
+ *             imageURL:
+ *               type: string
  *             name:
  *               type: string
  *             category:
@@ -121,8 +127,8 @@ router.post('/', async (req, res) => {
  *         description: Updated
  */
 router.put('/:id', async (req, res) => {
-    const { name, category, published } = req.body;
-    const response = await updateBrand(req.params.id, name, category, published);
+    const { imageURL, name, category, published } = req.body;
+    const response = await updateBrand(req.params.id, imageURL, name, category, published);
 
     if (response.success) {
         res.status(200).json(response);

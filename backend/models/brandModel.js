@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 // Define the schema for the Brand model
 const brandSchema = new mongoose.Schema({
-    _id: mongoose.Schema.Types.ObjectId,
-  image: {
+  _id: mongoose.Schema.Types.ObjectId,
+  imageURL: {
     type: String,
     required: true,
   },
